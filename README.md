@@ -30,7 +30,9 @@ I used Figma and Adobe Color to design the layout and set up the color palette I
 
 
 
-I kept the out of the box setup of NextJS to get things up and running fast and it works well with Netlify for quick and seamless deployment.
+I kept the out of the box setup of NextJS to get things up and running fast and it works well with Netlify for quick and seamless deployment. 
+
+Here is the link to the live project on Netlify - https://main--legendary-halva-bfd9d9.netlify.app/
 
 Test wise I focused on the useToDo custom hook I set up as that's where most of the logic is held and a small one for the ToDoButton from a render component persepctive, obviously this can be elaborated on throughout the application but I focussed on only a couple of examples.
 

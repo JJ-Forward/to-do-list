@@ -26,7 +26,7 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-    width: 30%;
+    width: 40%;
     padding: 1rem;
     border: none;
     font-size: 1rem;

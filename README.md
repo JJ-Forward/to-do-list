@@ -20,17 +20,18 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## The Task
 
-To learn more about Next.js, take a look at the following resources:
+I decided to take a holistic approach to the task and build the Todo list as a nextjs/react project. I felt in this way I could show my general ideas around desiging, building, styling and testing components as well as react projects as a whole and showing CI/CD pipelines I am familiar with and like.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I used Figma and Adobe Color to design the layout and set up the color palette I wanted.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I kept the out of the box setup of NextJS to get things up and running fast and it works well with Netlify for quick and seamless deployment.
 
-## Deploy on Vercel
+Test wise I focused on the useToDo custom hook I set up as that's where most of the logic is held and a small one for the ToDoButton from a render component persepctive, obviously this can be elaborated on throughout the application but I focussed on only a couple of examples.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I'm a fan of styled components and keeping styles, types, tests etc of a component together withint its own folder. I think this makes it easier for anyone coming to a codebase to have a clear understanding of what is going on and what relates to what in one place as opposed to having a test folder seperated from the code that its testing as an example. This is my preference but I've worked with codebases very different from this haha! 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+It was my original idea to incorporate a drabbale item which is why I had a toggle button instead of allowing the toggle of the whole list item. I planned to utilise this package - https://www.npmjs.com/package/react-draggable-list but it was a bit extra and as is sometimes the case I got a little tied up setting up the testing libraries having forgotten some of the dependencies needed to get everything up and running smoothly. It could do with some more package/config finesse but I felt like that was outside of the scope of the task anyway.
+
+I really enjoyed the task and looking at the classic todo list in a fresh way. I'll use this little project to try some things out in the future! Like the draggable items ;D

@@ -24,7 +24,11 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 I decided to take a holistic approach to the task and build the Todo list as a nextjs/react project. I felt in this way I could show my general ideas around desiging, building, styling and testing components as well as react projects as a whole and showing CI/CD pipelines I am familiar with and like.
 
-I used Figma and Adobe Color to design the layout and set up the color palette I wanted.
+I used Figma and Adobe Color to design the layout and set up the color palette I wanted. As you'll notice I didn't get round to flipping the colour on the done toggle. :/
+
+<img width="1207" alt="Screenshot 2023-10-31 at 11 58 56" src="https://github.com/JJ-Forward/to-do-list/assets/28861980/48d338db-79eb-4325-b064-292a00f300b1">
+
+
 
 I kept the out of the box setup of NextJS to get things up and running fast and it works well with Netlify for quick and seamless deployment.
 

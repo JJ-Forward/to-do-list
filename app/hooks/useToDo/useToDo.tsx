@@ -8,39 +8,39 @@ interface ToDoItem {
 export const useToDo = () => {
   const [toDoList, setToDoList] = React.useState<ToDoItem[]>([]);
 
-  const handleAddToDoItem = (item: ToDoItem) => {
+  const handleAddToDoItem = React.useCallback((item: ToDoItem) => {
     setToDoList([...toDoList, item]);
-  };
+  }, [toDoList]);
 
-  const handleRemoveToDoItem = (index: number) => {
+  const handleRemoveToDoItem = React.useCallback((index: number) => {
     setToDoList(toDoList.filter((_, i) => i !== index));
-  };
+  }, [toDoList]);
 
-  const handleRemoveAllToDos = () => {
+  const handleRemoveAllToDos = React.useCallback(() => {
     setToDoList([]);
-  };
+  }, []);
 
-  const handleShowAllToDos = () => {
+  const handleShowAllToDos = React.useCallback(() => {
     const newToDoList = [...toDoList];
     newToDoList.forEach((item) => (item.hidden = false));
     setToDoList(newToDoList);
-  };
+  }, [toDoList]);
 
-  const handleOnSubmit = (inputValue: string) => {
+  const handleOnSubmit = React.useCallback((inputValue: string) => {
     handleAddToDoItem({ name: inputValue, completed: false, hidden: false });
-  };
+  }, [handleAddToDoItem]);
 
-  const handleCompletedToDoItem = (index: number) => {
+  const handleCompletedToDoItem = React.useCallback((index: number) => {
     const newToDoList = [...toDoList];
     newToDoList[index].completed = !newToDoList[index].completed;
     setToDoList(newToDoList);
-  };
+  }, [toDoList]);
 
-  const handleHideToDoItem = (index: number) => {
+  const handleHideToDoItem = React.useCallback((index: number) => {
     const newToDoList = [...toDoList];
     newToDoList[index].hidden = !newToDoList[index].hidden;
     setToDoList(newToDoList);
-  };
+  }, [toDoList]);
 
   return {
     toDoList,

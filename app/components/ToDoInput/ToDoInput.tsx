@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { ToDoInputProps } from "./ToDoInput.types";
 import { Button, Input, InputContainer } from "./ToDoInput.styles";
 
@@ -32,4 +32,4 @@ const ToDoInput = ({ onSubmit }: ToDoInputProps) => {
   );
 };
 
-export default ToDoInput;
+export default memo(ToDoInput);

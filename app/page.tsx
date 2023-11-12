@@ -13,7 +13,6 @@ import { Color } from "./constants/color";
 export default function Home() {
   const {
     toDoList,
-    handleAddToDoItem,
     handleRemoveToDoItem,
     handleRemoveAllToDos,
     handleShowAllToDos,

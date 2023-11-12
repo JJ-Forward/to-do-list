@@ -32,4 +32,4 @@ const ToDoInput = ({ onSubmit }: ToDoInputProps) => {
   );
 };
 
-export default memo(ToDoInput);
+export default ToDoInput;

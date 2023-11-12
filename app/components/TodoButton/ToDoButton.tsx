@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { ToDoButtonContainer } from "./ToDoButton.styles";
 import { ToDoButtonProps } from "./ToDoButton.types";
 import { get } from "http";
@@ -34,4 +34,4 @@ const ToDoButton = ({
   );
 };
 
-export default ToDoButton;
+export default memo(ToDoButton);

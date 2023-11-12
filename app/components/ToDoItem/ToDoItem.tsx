@@ -38,7 +38,7 @@ const ToDoItem = ({
   }
 
   return (
-    <Item style={{backgroundColor: isCompleted ? 'var(--light-green)' : 'var(--gray)' }}>
+    <Item data-testid="todo-item-container" style={{backgroundColor: isCompleted ? 'var(--light-green)' : 'var(--gray)' }}>
       {isCompleted && (
         <IconContainer>
           <Image src={CompletedIcon} alt="Check icon" width={18} height={14} />
